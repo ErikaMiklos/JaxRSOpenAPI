@@ -1,0 +1,5 @@
+fr\istic\taa\jaxrs\dao\generic\AbstractJpaDao.class
+fr\istic\taa\jaxrs\dao\generic\IGenericDao.class
+fr\istic\taa\jaxrs\dao\generic\EntityManagerHelper.class
+fr\istic\taa\jaxrs\TestApplication.class
+fr\istic\taa\jaxrs\RestServer.class

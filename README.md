@@ -17,7 +17,8 @@ APIs form the connecting glue between modern applications. Nearly every applicat
 To do this integration first, I already add a dependencies to openAPI libraries. 
 
 ```xml
-			<dependency>
+<dependencies>
+        <dependency>
 			<groupId>io.swagger.core.v3</groupId>
 			<artifactId>swagger-jaxrs2</artifactId>
 			<version>2.1.4</version>
@@ -27,6 +28,7 @@ To do this integration first, I already add a dependencies to openAPI libraries.
 			<artifactId>swagger-jaxrs2-servlet-initializer-v2</artifactId>
 			<version>2.1.4</version>
 		</dependency>
+</dependencies>
 ```
 
 Next you have to add OpenAPI Resource to your application
@@ -47,7 +49,6 @@ public class RestApplication extends Application {
 
         //Your own resources. 
         resources.add(PersonResource.class);
-....
 		return resources;
 	}
 }
@@ -70,9 +71,9 @@ At the end of the index.html, your must have something like that.
    // Build a system
       const ui = SwaggerUIBundle({
         url: "http://localhost:8080/openapi.json",
-        dom_id: '#swagger-ui',
+        dom_id: '#swagger-ui'})
         
-        ...
+        
 ```
 
 Next add a new resources to create a simple http server when your try to access to http://localhost:8080/api/.
