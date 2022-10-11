@@ -5,7 +5,7 @@ import fr.istic.taa.jaxrs.domain.Prof;
 import javax.persistence.EntityManager;
 import java.util.List;
 
-public class ProfDao implements IProfDao{
+public class ProfDao{
     EntityManager manager = EntityManagerHelper.getEntityManager();
 
     public void createProfs() {
